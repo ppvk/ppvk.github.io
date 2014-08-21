@@ -2,6 +2,7 @@
 <html>
   <head lang='en'>
     <title>ppvk</title>
+    <meta content='width=device-width' initial-scale='1.0' name='viewport' user-scalable='no'>
     <style>
       @import url(http://fonts.googleapis.com/css?family=Quantico);
 body {
@@ -9,7 +10,11 @@ body {
   margin: 0;
   background-color: #F5ECCF;
   color: #9BA082;
-  font-family: "Quantico", sans-serif; }
+  font-family: "Quantico", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
 
 header {
   padding: 0;
@@ -17,27 +22,16 @@ header {
   font-size: 45px;
   height: 30px;
   color: #F5ECCF;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
   line-height: 30px; }
 
 main {
-  position: absolute;
-  top: 30px;
-  bottom: 25px;
-  right: 0;
-  left: 0; }
+  width: 100%;
+  flex: 1; }
 
 footer {
   background-color: #9BA082;
   color: #F5ECCF;
-  position: absolute;
-  height: 25px;
-  left: 0;
-  bottom: 0;
-  right: 0; }
+  height: 25px; }
 
 .panel {
   float: right;
@@ -62,29 +56,29 @@ footer {
     </header>
     <main>
       <div class='panel'>
-        PEN
+        pen
       </div>
       <div class='panel'>
-        COU
+        cou
       </div>
       <div class='panel'>
-        OPENSWORD
+        OpenSword
       </div>
       <div class='panel'>
-        TILES
+        Tiles
       </div>
       <div class='panel'>
-        LIBPEN
+        libpen
       </div>
       <div class='panel'>
-        PUMP
+        pump
       </div>
       <div class='panel'>
-        DART-SLACK
+        dart-slack
       </div>
     </main>
     <footer>
-      WRITTEN AND DEVELOPED BY PAULVANKEUREN
+      Written and directed by PaulVanKeuren
     </footer>
   </body>
 </html>
