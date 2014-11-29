@@ -4,36 +4,46 @@ body {
   font-family: 'Bree Serif', serif;
   background:#002b36;
   color:#839496;
+  height:calc(100% + 3em);
 }
-header , footer{
-  background:#073642;
+a {
+  color:#839496;
+  text-decoration:none;
+}
+
+ footer{
   height:1.5em;
   margin:1em;
   padding:0.5em;
   border-radius:0.5em;
-}
-footer {
   position:absolute;
   width:calc(100% - 3.5em);
   left:0em;
   bottom:0;
 }
 
+main {
+  width:100%;
+  max-width:700px;
+  margin:auto;
+  margin-top:1em;
+}
+
+
+
+
 header * {
   vertical-align: middle;
 }
 header ul {
   float:right;
-  margin:0;
+  margin:-0.5em;
 }
 header ul li {
   padding:0.5em;
   display: inline;
 }
-header ul li:hover {
-  background:#002b36;
-  cursor:pointer;
-}
+
 
 button {
   font-size:1.5em;
@@ -59,7 +69,7 @@ button:active {
   height:20em;
   margin-left: auto;
   margin-right:auto;
-  min-width:400px;
+  min-width:300px;
   max-width:600px;
   text-align:center;
   padding:1em;
@@ -69,13 +79,12 @@ button:active {
   height:100px;
   border-radius:50%;
   border:solid 5px #eee;
-
+  box-shadow:0px 3px 7px rgba(0,0,0,0.5);
 }
 
 .logo {
-  background:#073642;
   border-radius:0.5em;
   width:3.5em;
-  margin:-1em;
+  margin:-0.8em;
   margin-left:-0.5em;
 }
