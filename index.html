@@ -2,49 +2,131 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<title>Paul VanKeuren</title>
     
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/header.css">
 	</head>
 
 	<body>
 		<header>
     <div id="header-logo">
-      <a href="index.html">PAUL VANKEUREN JR.</a>
+      <a href="#introduction-page">PAUL VANKEUREN JR.</a>
     </div>
     <nav>
-      <a href="#portfolio">PORTFOLIO</a> 
-      | 
-      <a href="#games">GAME DEVELOPMENT</a>
-      | 
-      <a href="#art">GRAPHICS</a>
-      | 
-      <a href="#words">WORDS</a>
+      <a href="#games-page">GAME DEV</a> <span class="vr">|</span>
+      <a href="#graphics-page">GRAPHICS</a> <span class="vr">|</span>
+      <a href="#words-page">WORDS</a>
     </nav>
     </header>
     
     <main>
+    
+    <!-- Information Pages -->
+    <div id="introduction-page"  class="page" hidden>
       <div id="main-introduction">
-        Hello, I'm a craftsman who lives on the web,
-        <br>...<br>
-        I think simplicity should be a trend,
-        <br>...<br>
-        and a background in philosophy is useful.
+        Hello, I'm a craftsman who lives on the web.
       </div>
       
-      <div id="introduction-calltoaction"> 
-        <a href="#portfolio">View my Portfolio</a>
+      <a href="#bestof-page">
+        <div id="introduction-calltoaction"> 
+          View my Portfolio
+        </div>
+      </a>
+    </div>
+    
+    <!-- Portfolio Pages -->    
+    <div id="bestof-page" class="page" hidden>
+    
+      <a href="https://github.com/ChildrenOfUr/coUclient">
+        <article>
+          Children of Ur
+          <i class="fa fa-github"></i><br>
+          A reboot of the closed webgame Glitch, started in 2013.
+        </article>
+      </a>
+      
+      <a href="http://dlalogames.com/">
+        <article>
+          Dlalo Games
+          <i class="fa fa-link"></i><br>
+          Logo design, game elements.
+        </article>
+      </a>
+      
+      
+      <a href="https://github.com/ppvk/BartonBadges">
+        <article>
+          BartonBadges
+          <i class="fa fa-github"></i><br>
+          Concept for a simplified version of Mozilla Backpack.
+        </article>
+      </a>
+      
+    </div>
+    
+    
+    <div id="games-page" class="page" hidden>
+      GAAAAAAAMES!!
+    </div>
+    
+    <div id="graphics-page" class="page" hidden>
+      AAAAARRRRRTTT!!
+    </div>
+    
+    
+    <div id="words-page" class="page" hidden>
+      <div>
+        I enjoy writing poetry. It's an excellent excersise in taking complex or subtle experiences 
+        and compressing them into concrete images. I could try to say something profound about the 
+        relationship between software development and poetry, but I won't.<br>
+        These poems are hosted on HelloPoetry.
+        <br><br>
+        
+        <a href="http://hellopoetry.com/poem/1079969/charity/">
+          Charity
+        </a><br><br>
+        
+        <a href="http://hellopoetry.com/poem/1097630/darin/">
+          Darin
+        </a><br><br>
+        
+        <a href="http://hellopoetry.com/poem/1031378/lumospheres/">
+          Lumospheres
+        </a><br><br>
+                
       </div>
-
+    </div>    
+    
+    
+    <!-- Project Pages -->
+    
+    <div id="cou-page" class="page" hidden>
+      Children of Ur
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     </main>    
     
     <footer>
-      Made with ♥ in Minnesota
+      Made with ♥ in Minnesota<br>
+      IN PROGRESS
     </footer>    
     
-	</body>
+    <script type="application/dart" src="main.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
 </html>

@@ -1,3 +1,7 @@
+* {
+  transition:all 0.5s;
+}
+
 html {
   height:100vh;
   width:100vw;
@@ -10,8 +14,6 @@ body {
   margin:0;
   background-color:#eee;
   font-family: 'Montserrat', sans-serif;
-  display: flex;
-  flex-direction: column;
   height: 100vh;
   color:#333;
 }
@@ -19,54 +21,66 @@ body {
 a {
   text-decoration:none;
   color:#555;
+  transform:translateY(0);
 }
 a:hover {
   color:#000;
 }
 
 
-header {
- width:calc(100vw - 3em);
- max-width:800px;
- margin:auto;
- padding:1em;
- box-shadow: 0 1em 1em #eee;
- z-index:1;
-}
-#header-logo {
-  width:4em;
-  display:inline-block;
-  margin:0 2em;
-}
-
-nav {
-  margin-left:auto;
-  display:inline-block;
-  text-align:right;
-  margin-top:1em;
-  float:right;
-}
-
 main {
   flex:1;
   overflow:auto;
   padding:1em;
-  width: calc(100vw - 3em);
+  display:block;
+  min-height:(100vh - 7em);
   max-width:600px;
   margin:auto;
 }
 
 #main-introduction {
-  margin:2em;
+  margin:25vh 0;
   font-size:2.5em;
   text-align:center;
 }
 
 #introduction-calltoaction {
+  background-position:500px;  
+  display:block;
+  width:10em;
+  padding:1em;
+  border-radius:2em;
   text-align:center;
-  width:100%;
+  border:2px solid #888;
   margin:auto;
+  background-size:10px 300px;
 }
+#introduction-calltoaction:hover {
+  border:2px solid #000;
+  color:#000;
+}
+
+article {
+  margin:1em;
+  padding:1em;
+}
+article:hover {
+  cursor:pointer;
+  transform:translateY(-2px);
+  background:#fff;
+  border-radius:8px;
+}
+
+article img {
+  display:block;
+  margin:auto;
+  width:50%;
+}
+
+article i {
+  float:right;
+}
+
 
 footer {
   padding:0.5em;
@@ -75,6 +89,6 @@ footer {
   margin:auto;
   text-align:center;
   color:#555;
-  box-shadow: 0 -1em 1em #eee;
+  border-top:2px solid #888;
   z-index:1;
 }
