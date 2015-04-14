@@ -20,14 +20,14 @@ setPage() {
     footer.style.opacity = '0';
   });
 
-  new Timer(new Duration(milliseconds: 500), () {
+  new Timer(new Duration(milliseconds: 200), () {
     pages.forEach((element) {
       element.hidden = true;
 
       Element targetElement = querySelector('#$target');
       if (targetElement != null) {
         targetElement.hidden = false;
-        new Timer(new Duration(milliseconds: 500), () {
+        new Timer(new Duration(milliseconds: 200), () {
           targetElement.style.opacity = "1";
           footer.style.opacity = '1';
         });

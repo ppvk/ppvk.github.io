@@ -1,5 +1,5 @@
 * {
-  transition:all 0.5s;
+  transition:all 0.2s;
 }
 
 html {
@@ -64,21 +64,22 @@ article {
   margin:1em;
   padding:1em;
 }
-article:hover {
-  cursor:pointer;
-  transform:translateY(-2px);
-  background:#fff;
-  border-radius:8px;
-}
 
 article img {
   display:block;
   margin:auto;
   width:50%;
+  background:#fff;
+  padding:1em;
+  margin-top:1em;
+  margin-bottom:1em;
+  border-radius:5px;
 }
 
 article i {
   float:right;
+  padding:0.5em;
+  padding-top:0;
 }
 
 
