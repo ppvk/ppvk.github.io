@@ -1,37 +1,30 @@
+/*
 import 'dart:html';
 import 'dart:async';
+import 'package:markdown/markdown.dart' as md;
 
-List<Element> pages = querySelectorAll('.page');
-Element footer = querySelector('footer');
 
+Map<String, String> readme = {};
 
 main() {
-  window.onHashChange.listen((_) {
-    setPage();
+
+  querySelectorAll('a').toList().forEach((Element link) async {
+    if (link.attributes['href'].toString().contains('github.com')) {
+      String src = link.attributes['href'].toString().replaceAll(
+          'https://github.com/', 'https://raw.githubusercontent.com/') + '/master/README.md';
+
+      link.onMouseOver.listen((_) async {
+        readme[src] = await HttpRequest.getString(src);
+
+        querySelector('#viewer')
+          ..setInnerHtml(md.markdownToHtml(readme[src]), validator:nv);
+      });
+
+    }
+
   });
-  if (window.location.href.contains('#') == false) window.location.href += '#introduction-page';
-  setPage();
+
 }
 
-setPage() {
-  String target = window.location.href.split('#')[1];
-  pages.forEach((element) {
-    element.style.opacity = '0';
-    footer.style.opacity = '0';
-  });
-
-  new Timer(new Duration(milliseconds: 200), () {
-    pages.forEach((element) {
-      element.hidden = true;
-
-      Element targetElement = querySelector('#$target');
-      if (targetElement != null) {
-        targetElement.hidden = false;
-        new Timer(new Duration(milliseconds: 200), () {
-          targetElement.style.opacity = "1";
-          footer.style.opacity = '1';
-        });
-      }
-    });
-  });
-}
+NodeValidator nv = new NodeValidator();
+*/

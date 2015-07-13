@@ -1,4 +1,5 @@
 name: Portfolio
-description: A sample application
+description: Personal Website
 dependencies:
   browser: any
+  markdown: "^0.7.1+2"
