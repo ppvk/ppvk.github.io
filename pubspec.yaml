@@ -1,5 +1,2 @@
 name: Portfolio
 description: Personal Website
-dependencies:
-  browser: any
-  markdown: "^0.7.1+2"
